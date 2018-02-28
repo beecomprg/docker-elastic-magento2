@@ -1,3 +1,4 @@
-FROM elasticsearch:2-alpine
+FROM elasticsearch:5-alpine
 
-RUN /usr/share/elasticsearch/bin/plugin install --batch analysis-phonetic analysis-icu
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu
