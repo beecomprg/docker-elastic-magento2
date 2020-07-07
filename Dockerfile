@@ -1,4 +1,4 @@
-FROM elasticsearch:6.8.8
+FROM elasticsearch:7
 
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu
